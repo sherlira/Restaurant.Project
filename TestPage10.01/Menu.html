@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="./css/styleMenu.css" rel="stylesheet" type="text/css" />
+    <title>Menu</title>
+    <script src="./JavaScript.js"></script>
+</head>
+
+    <body onload="getItem(); getUser();">
+       
+            <div class="block1">
+                <div class="conteiner">
+                    <div class="toplink">
+                        <div class="logo"> <img src="img/logo.png" width="60" height="50" /> </div>
+                        <div class="libox">
+                            <a href="HtmlPage1.html">HOME PAGE</a>
+                            <a href="HtmlPage1.html#block3">OUR RESTAURANTS</a>
+                            <a href="HtmlPage1.html#block4">CONTACT</a>
+                            <a href="HtmlPage2.html">COOK-CHEF</a>
+                        </div>
+                        <div class="butbox">
+
+                            <div class="button1"> <button> <a href="Table.aspx">RESERVE A TABLE</a></button> </div>
+                            <div class="button2" id="login"><button> <a href="Login.aspx">SIGN IN</a></button> </div>
+                        </div>
+                    </div>
+
+                    <div class="contentbox">
+                        <div class="h">
+                            <h1>Menu</h1>
+                        </div>
+                        <div class="add" id="add" style="display:none">
+                            <div class="inputBox">
+                                <input type="text" id="name" name="name" placeholder="Name for item" />
+                                <input type="text" id="src" name="src" placeholder="Item url" />
+                                <input type="text" id="pos" name="pos" placeholder="Position for item" />
+                                <input type="text" id="price" name="price" placeholder="Price for item" />
+               
+                               <div class="button3"><button onclick="addItem()"> Add</button></div> 
+                            </div>
+                            </div>
+                         
+                        <div class="h2">
+                            <h1> Main dishes</h1>
+                        </div>
+                        <div class="main" id="main">
+                           
+                        </div>
+                        <div class="h3">
+                            <h1> Drinks </h1>
+                        </div>
+                        <div class="drinks" id="drinks">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </body>
+</html>
